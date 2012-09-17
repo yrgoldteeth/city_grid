@@ -3,7 +3,7 @@ module CityGrid
     extend self
 
     def api_key
-      ENV['CITY_GRID_API_KEY'] ||= raise "ENV var for CITY_GRID_API_KEY must be set"
+      ENV['CITY_GRID_PUBLISHER_CODE'] ||= raise "ENV var for CITY_GRID_PUBLISHER_CODE must be set"
     end
 
     def base_url

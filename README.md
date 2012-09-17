@@ -1,8 +1,16 @@
 # CityGrid
 
-TODO: Write a gem description
+Ruby wrapper for CityGrid Media.
 
 ## Installation
+
+Sign up for you account with CityGrid:
+
+http://developer.citygridmedia.com/dashboard/registration
+
+Add your publisher code as an ENV var named CITY_GRID_PUBLISHER_CODE
+
+    export CITY_GRID_PUBLISHER_CODE=xxxxxxxxxxx
 
 Add this line to your application's Gemfile:
 

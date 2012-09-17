@@ -4,8 +4,8 @@ require File.expand_path('../lib/city_grid/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Nicholas Fine"]
   gem.email         = ["nicholas.fine@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Ruby wrapper for CityGrid API}
+  gem.summary       = %q{Ruby wrapper for CityGrid API}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,8 @@ Gem::Specification.new do |gem|
   gem.name          = "city_grid"
   gem.require_paths = ["lib"]
   gem.version       = CityGrid::VERSION
+
+  gem.add_runtime_dependency 'curb'
+  gem.add_runtime_dependency 'json'
+  gem.add_development_dependency 'pry'
 end
