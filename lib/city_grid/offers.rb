@@ -1,10 +1,10 @@
 module CityGrid
-  class Reviews < Api
+  class Offers < Api
     def uri
       if request_opts.has_key?(:lat) && request_opts.has_key?(:lon)
-        '/reviews/v2/search/latlon'
+        '/offers/v2/search/latlon'
       else
-        '/reviews/v2/search/where'
+        '/offers/v2/search/where'
       end
     end
   end
