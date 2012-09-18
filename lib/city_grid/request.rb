@@ -14,7 +14,7 @@ module CityGrid
 
     private
     def request_class
-      request_opts[:request_class] || Curl
+      @request_opts[:request_class] || Curl
     end
 
     def default_opts
