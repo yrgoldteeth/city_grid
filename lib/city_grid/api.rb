@@ -8,7 +8,7 @@ module CityGrid
     end
 
     def results
-      request.parsed_response
+      Result.new(request.parsed_response)
     end
 
     def request

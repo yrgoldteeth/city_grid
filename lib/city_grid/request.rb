@@ -13,6 +13,10 @@ module CityGrid
     end
 
     private
+    def request_class
+      request_opts[:request_class] || Curl
+    end
+
     def default_opts
       {
         format: 'json',
@@ -25,7 +29,7 @@ module CityGrid
     end
 
     def make_request
-      Curl.get(@uri, @request_opts)
+      request_class.get(@uri, @request_opts)
     end
   end
 end

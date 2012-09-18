@@ -17,5 +17,6 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency 'curb'
   gem.add_runtime_dependency 'json'
+  gem.add_runtime_dependency 'hashie'
   gem.add_development_dependency 'pry'
 end
